@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EduGuide Bot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for mic icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="chat-container">
+
+    <!-- Header -->
+    <div class="chat-header">
+        🎓 EduGuide Bot <span class="status">Online</span>
+    </div>
+
+    <!-- Chat Area -->
+    <div class="chat-box" id="chatBox">
+        <div class="bot-message">
+            Hi 👋 I am <b>EduGuide Bot</b>.<br>
+            How can I help you?
+        </div>
+
+        <div class="options">
+            <button onclick="courses()">Courses</button>
+            <button onclick="exams()">Exams</button>
+            <button onclick="careers()">Careers</button>
+        </div>
+    </div>
+
+    <!-- Input Area -->
+    <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+        <button onclick="startVoice()"><i class="fa-solid fa-microphone"></i></button>
+    </div>
+
+</div>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
